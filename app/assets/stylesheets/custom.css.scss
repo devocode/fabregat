@@ -2,17 +2,15 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-/* @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Damion);
-@import url(http://fonts.googleapis.com/css?family=Neucha); */
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600|Josefin+Slab:100,300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Josefin+Slab:300,400,600);
 
 
 /************************************************** 
 DEFINITIONS
 **************************************************/
-$font1: 'Josefin Sans', sans-serif; /* 'Josefin Sans', sans-serif; "Asap", sans-serif;*/
-$font2: 'Josefin Slab', serif; /* 'Neucha', cursive; "Flamenco", cursive; */
+$font1: 'Josefin Sans', sans-serif;
+$font2: 'Josefin Slab', serif;
 $body-text:  #333;
 $black: #131313;
 $white:	#fcfcfc;
