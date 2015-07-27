@@ -8,7 +8,7 @@ class LeadsController < ApplicationController
 	def create
 		@lead = Lead.new lead_params
 		if @lead.save
-			redirect_to root_path, notice: "Gracias por el mensaje.  Estaremos en contacto! Si necesitas ponerte en contacto ahora mismo, usa los datos a la derecha."
+			redirect_to root_path, notice: "Gracias por el mensaje. ¡Estaremos en contacto!"
 			
 			#LeadMailer.new_lead(@lead).deliver_later   ADD LEAD MAILER LATER!!!!
 			

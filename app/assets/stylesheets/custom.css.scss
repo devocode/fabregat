@@ -229,17 +229,17 @@ BUTTONS
 
 .home-button {
 	text-transform: uppercase;
-	background: $white;
+	background: transparent;
 	font-family: $font2;
-	color: $green;
+	color: $white;
 	transition: all 0.4s ease-in-out;
 	padding: 15px 25px;
 	font-size: 1.4em;
 	border: 2px solid $white;
 	box-sizing: border-box;
 	&:hover {
-		background: transparent;
-		color: $white;
+		background: $white;
+		color: $green;
 		border: 2px solid $white;
 	}
 }
@@ -439,7 +439,6 @@ MAIN SECTION
 		font-size: 2.8em;
 		margin-bottom: 20px;
 		&.main-text {
-			font-size: 3.5em;
 			color: $green;
 		}
 	}
@@ -763,6 +762,12 @@ RESPONSIVE SECTION
 		h1 {
 			font-size: 42px;
 		}
+	}
+	#contact h1, #main h1 {
+		font-size: 42px;
+	}
+	#contact h3, #main h3 {
+		font-size: 18px;
 	}
 }
 
