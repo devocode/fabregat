@@ -95,7 +95,13 @@ HOMEPAGE
 
 #heading {
 	color: $black;
-	background: image-url('bg2.jpg') center $white;
+	background-image: image-url('bg2.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $white;
+	/* For Parallax-Style Scrolling
+	background-attachment: fixed; */
 	padding: 9em 0;
 	h1 {
 		margin: 15px 0 0 0;
@@ -113,7 +119,7 @@ HOMEPAGE
 	.heading {
 		margin: 0 auto;
 		width: 100%;
-		padding: 2em;
+		padding: 2em 1em;
 		background: transparent;
 		position: relative;
 		z-index: 4;
@@ -180,7 +186,7 @@ HOMEPAGE
 
 #contact {
 	text-align: center;
-	background: darken($white, 6%);
+	background: darken($white, 3%);
 	h3 {
 		font-family: $font1;
 		text-transform: uppercase;
@@ -715,8 +721,10 @@ RESPONSIVE SECTION
 
 @media (max-width: 768px) {
 		#heading {
+			padding: 6em 0;
 			h1 {
 				font-size: 53px;
+				margin-top: 0;
 			}
 			h2{
 				font-size: 17px;
