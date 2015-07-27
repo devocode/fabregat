@@ -68,6 +68,9 @@ h1 {
 section {
 	padding: 4em 0;
 	position: relative;
+	&#leads {
+		padding: 1.5em 0;
+	}
 }
 
 .white {
@@ -155,6 +158,10 @@ HOMEPAGE
 	z-index: 0;
 	position: relative;
 	padding: 50px 0;
+	.col-md-4 {
+		padding-top: 25px;
+		text-align: center;
+	}
 	p.lead {
 		font-size: 25px;
 		line-height: 1.5;
@@ -386,7 +393,7 @@ FOOTER
     line-height: 2.2em;
     font-size: 30px;
     color: $blue;
-    transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;
     background: rgba($white,0.8);
 }
 
@@ -395,7 +402,7 @@ FOOTER
 }
 
 .btn-outline:hover {
-	background: rgba($black,0.5);
+	background: rgba($black,0.3);
 	color: $white;
 }
 
