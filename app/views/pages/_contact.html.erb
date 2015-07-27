@@ -1,0 +1,43 @@
+<section id="contact">
+
+	<div class="container">
+
+		<h1>Pónte en Contacto!</h1>
+		<h3>Ut eam assum quaeque persecuti.</h3>
+
+		<hr>
+
+		<%= form_for Lead.new do |f| %>
+			<div class="row">
+
+				<div class="form-group col-xs-6">
+					<label>Nombre</label>
+					<%= f.text_field :first_name, class: "form-control", placeholder: "Tu nombre...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-6">
+					<label>Apellido</label>
+					<%= f.text_field :last_name, class: "form-control", placeholder: "Tu apellido...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-12">
+					<label>Email</label>
+					<%= f.email_field :email, class: "form-control", placeholder: "Tu email...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-12">
+					<label>Mensaje</label>
+					<%= f.text_area :message, rows: "4", class: "form-control", placeholder: "Déjanos un mensaje aqui...", required: true %>
+				</div>
+
+				<%= button_tag class: "btn btn-lg nav-button" do %>
+					Enviar
+				<% end %>
+
+			</div><!-- .row -->
+
+		<% end %>
+
+	</div><!-- .container -->
+
+</section>

@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="panel panel-default">
+
+		<div class="panel-heading" style="position: relative;">
+			<h1>Contact Information</h1>
+
+			<div class="contacted">
+				<% if @lead.contacted == "No" %>	
+					<%= image_tag('notcontacted.png')%>
+				<% else %>		
+					<%= image_tag('contacted.png')%>
+				<% end %>
+			</div>
+
+		</div>
+
+		
+
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-xs-6">
+					<label>Nombre</label>
+					<p class="lead"><%= @lead.first_name %> <%= @lead.last_name %></p>
+				</div>
+
+				<div class="col-xs-6">
+					<label>Email</label>
+					<p class="lead"><%= @lead.email %></p>
+				</div>
+				
+				<div class="col-xs-12">
+					<label>Mensaje</label>
+					<div class="notes">
+						<%= @lead.message %>
+					</div>
+				</div>
+
+				<%= link_to edit_lead_path(@lead), class: "edit btn btn-lg btn-success" do %>
+	        <span class="glyphicon glyphicon-edit"></span>
+	        Edit
+	      <% end %>
+				
+			</div><!-- .row -->
+
+			<%= link_to "Borrar", @lead, class: "btn btn-danger pull-right btn-lg", method: :delete, data: {confirm: "Estás seguro que quieres borrar?"} %>
+			<%= link_to "Volver", leads_path, class: "btn btn-default pull-right btn-lg" %>
+
+			<%= mail_to @lead.email, class: "btn btn-info btn-lg" do %>
+				Email <i class="fa fa-envelope fa-fw"></i>
+			<% end %>
+
+		</div><!-- .panel-body -->
+
+		
+	</div><!-- .panel-default -->
+</div><!-- .container	-->
