@@ -98,7 +98,7 @@ HOMEPAGE
 
 #heading {
 	color: $black;
-	background-image: image-url('bg2.jpg');
+	background-image: image-url('foodback.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -148,6 +148,7 @@ HOMEPAGE
 		font-size: 26px;
 		line-height: 1.4;
 		margin: 0;
+		padding: 0 15px;
 	}
 
 }
