@@ -681,50 +681,19 @@ MENUS & MODALS
 }
 
 #main .boxie {
-	position: relative;
-	height: 140px;
-	width: 100px;
-	float: left;
-	margin: 2px 40px;
-	.boxer {
-		height: 130px;
-		width: 100px;
-		position: absolute;
-		top: 0;
-		transition: all 0.3s ease-in-out;
-		margin: 0;
-		&.one {
-			background: image-url('backing-images.png') 0 0 no-repeat;
-			margin-left: 10px;
-		}
-		&.two {
-			background: image-url('backing-images.png') -94px 0 no-repeat;
-		}
-		&.three {
-			background: image-url('backing-images.png') -516px 0 no-repeat;
-		}
-		&.four {
-			background: image-url('backing-images.png') -415px -5px no-repeat;
-			margin-left: -4px;
-		}
-		&.five {
-			background: image-url('backing-images.png') -305px -2px no-repeat;
-			margin-top: -3px;
-		}
-		&.six {
-			background: image-url('backing-images.png') -192px 0 no-repeat;
-			margin-left: 10px;
-		}
+	transition: all 0.4s ease-in-out;
+	img {
+		margin: 10px auto;
+		transition: all 0.4s ease-in-out;
 	}
-	.bottom {
-		position: absolute;
-		bottom: 0;
-		h4 {
-			position: relative;
-			text-align: center;
-			color: $lightblue;
-			font-size: 24px;
-		}
+	&:hover img {
+		transform: scale(1.2);
+	}
+	h4 {
+		text-align: center;
+		color: $lightblue;
+		font-size: 24px;
+		font-weight: 600;
 	}
 	
 	&:hover .boxer {
@@ -799,13 +768,6 @@ RESPONSIVE SECTION
 	.main-text {
 		text-align: center;
 	}
-	#main {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		.boxie:nth-child(3n+1) {
-			clear: both;
-		}
-	}
 }
 
 @media (max-width: 768px) {
@@ -820,6 +782,7 @@ RESPONSIVE SECTION
 			letter-spacing: 2px;
 		}
 	}
+	
 	#footer {
 		.blueback {
 			height: auto;
@@ -855,34 +818,122 @@ RESPONSIVE SECTION
 	#footer .dev {
 		left: 30px;
 	}
-	#main .boxie:nth-child(3n+1){
-		clear: none;
+	#main .boxie {
+		img {
+			height: 50px;
+		}
+		h4 {
+			font-size: 18px;
+		}
 	}
-	#main .boxie:nth-child(2n+1){
-		clear: both !important;
+	#main .row {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
 
 /************************************************** 
-UNUSED STUFF
+SLIDER
 **************************************************/
 
-#what {
-	background: darken($white, 5%);
-	color: $black;
-	z-index: 1;
-	height: 100%;
-	position: relative;
-	margin-top: -10px;
-	p {
-		font-size: 1.5em;
-		line-height: 1.3;
-		font-weight: 400;
-	}
-	.button-text {
-		display: inline;
-		padding: 0 40px;
-		font-size: 120%;
-	}
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-copy h1 {
+  color: #363636;  
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin-top: 105px;
+  margin-bottom: 0px;
+}
+
+.slide-copy h2 {
+  color: #b7b7b7;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin: 5px;
+}
+
+.slide-copy p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.slide-img {
+  text-align: right;
+}
+
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  height: 470px;
+}
+
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slide-feature a {
+  display: block;
+  color: #6fc5e0;
+  
+  font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 20px;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
 }
