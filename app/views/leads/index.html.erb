@@ -9,6 +9,7 @@
 						<th>Nombre</th>
 						<th>Apellido</th>
 						<th class="hidden-xs">Email</th>
+						<th class="hidden-xs">Teléfono</th>
 						<th class="hidden-xs">Mensaje</th>
 						<th class="text-center">Contactado</th>
 					</tr>
@@ -22,6 +23,7 @@
 							<td><%= link_to lead.first_name, edit_lead_path(lead) %></td>
 							<td><%= link_to lead.last_name, edit_lead_path(lead) %></td>
 							<td class="hidden-xs"><%= link_to lead.email, edit_lead_path(lead) %></td>
+							<td class="hidden-xs"><%= link_to lead.telephone, edit_lead_path(lead) %></td>
 							<td class="hidden-xs"><%= link_to (truncate(lead.message, length: 100)), edit_lead_path(lead) %></td>
 							<td class="text-center">
 								<% if lead.contacted == "No" %>
