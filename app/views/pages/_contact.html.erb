@@ -1,4 +1,4 @@
-<section id="contact">
+<div id="contact">
 
 	<div class="container">
 
@@ -20,9 +20,14 @@
 					<%= f.text_field :last_name, class: "form-control", placeholder: "Tu apellido...", required: true %>
 				</div>
 
-				<div class="form-group col-xs-12">
+				<div class="form-group col-xs-6">
 					<label>Email</label>
 					<%= f.email_field :email, class: "form-control", placeholder: "Tu email...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-6">
+					<label>Teléfono</label>
+					<%= f.text_field :email, class: "form-control", placeholder: "Tu teléfono...", required: true %>
 				</div>
 
 				<div class="form-group col-xs-12">
@@ -40,4 +45,4 @@
 
 	</div><!-- .container -->
 
-</section>
+</div>
