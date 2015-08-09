@@ -1,0 +1,389 @@
+<div id="heading" class="text-center">
+	<div class="black"></div>
+
+	<div class="heading">
+		
+
+		<div class="title">
+			
+			<h1>Gourmet Fabregat</h1>
+			<h2><strong class="head-one hidden-xs"></strong>Unforgettable Culinary Experiences<strong class="head-two hidden-xs"></strong></h2>
+
+			<%= link_to "Contact!", "#contact", class: "btn btn-lg home-button page-scroll" %>
+			
+		</div><!-- .title -->
+
+	</div><!-- .heading	 -->
+		
+</div><!-- #heading -->
+
+<div id="call">
+	<div class="container-fluid">
+		<div class="col-md-10 col-md-offset-1">
+
+			<p>Welcome to our <span class="highlight two">our showcase</span>, a page where you can become familiar with the <span class="highlight two">excellent services</span> offered to our clients.</p>
+
+			<p>Here you will find a complete listing of the many services that offered by<span class="highlight"> Gourmet Fabregat</span>.  We hope that you <span class="highlight">enjoy</span>.</p>
+
+		</div>
+	</div>
+
+</div>
+
+<div id="info">
+
+	<div class="container-fluid">
+
+		<div class="col-md-10 col-md-offset-1">
+
+			<div class="row">
+
+				<div class="col-md-3">
+
+					<h1 class="main-text">
+						<span class="little">Our</span>Philosophy
+					</h1>
+
+				</div><!-- .col-md-4 -->
+
+				<div class="col-md-9">
+
+					<p class="lead">
+						We started in 2015 with the conviction to fulfill the needs of clients who desire 
+						<span class="highlight">high-quality catering</span> services.
+					</p>
+
+					<p class="lead">
+						The foundation for our business is to alway provide the best food, delicious flavors and the best ingredients.  Our goal is to provide unforgetable catering services for each and every one of our clients. 
+					</p>
+
+					<p class="highlight">We seek to build real relationships with each client that counts on us.</p>
+
+				</div><!-- .col-md-8 -->
+
+			</div><!-- .row -->
+
+			<hr class="hidden-sm hidden-xs">
+
+			<!-- Start of Second Section  -->
+			<div class="row">
+
+				<div class="col-md-4 col-md-push-8">
+
+					<h1 class="main-text">
+						<span class="little">Our</span>Style
+					</h1>
+
+				</div><!-- .col-md-4 -->
+
+				<div class="col-md-8 col-md-pull-4">
+
+					<p class="lead">We offer high-quality, <span class="highlight">innovative solutions</span> , focusing principally on creating <span class="highlight">unforgettable culinary experiences in</span> catering and events for all clients who wish to celebrate a special moment. We fulfill our clients needs with professionalism and we enjoy what we do.</p>
+
+				</div><!-- .col-md-8 -->
+
+			</div><!-- .row -->
+
+			<div class="buttons info text-center">
+				<%= link_to "Sample Menu", "#menu", "data-toggle" => "modal", class: "btn btn-lg main-button" %>
+			</div><!-- .buttons.text-center -->
+
+		</div><!-- .col-md-10 -->
+
+	</div><!-- .container -->
+
+</div><!-- #info -->
+
+<div id="main">
+
+  <div class="container-fluid">
+
+    <div class="col-md-10 col-md-offset-1">
+
+      <div class="row">
+
+        <h1 class="text-center main-text">What do we do?</h1>
+        <p>
+          We offer specialized serives for <span class="highlight one">television and press</span>, <span class="highlight two">fashion and runway shows, </span>, <span class="highlight one">private events</span> and <span class="highlight two">business events</span>.
+        </p>
+        <p>Each day we offer breakfast, lunch and catering.</p>
+        <small>Click to see the services that we offer.</small>
+        
+        <div class="row text-center" role="tablist">
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+            <a href="#banc"  role="tab" data-toggle="tab">
+              <%= image_tag("banquet.png", class: "img-responsive")%>
+              <h4>Banquets</h4>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+            <a href="#catering"  role="tab" data-toggle="tab">
+              <%= image_tag("waiter.png", class: "img-responsive")%>
+              <h4>Catering</h4>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+             <a href="#pastel" role="tab" data-toggle="tab">
+              <%= image_tag("pan.png", class: "img-responsive")%>
+              <h4>Pastelería</h4>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+            <a  href="#empresas" role="tab" data-toggle="tab">
+              <%= image_tag("office.png", class: "img-responsive")%>
+              <h4>Businesses</h4>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+            <a  href="#domicilio" role="tab" data-toggle="tab">
+              <%= image_tag("home.png", class: "img-responsive")%>
+              <h4>Delivery</h4>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 boxie">
+            <a  href="#person" role="tab" data-toggle="tab">
+              <%= image_tag("events.png", class: "img-responsive")%>
+              <h4>Personalized</h4>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- .row -->
+
+      <div class="row">
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="banc">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("small2.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Banquets</h1>
+                  <p class="lead">We offer personalized serives for birthdays, events and personal and business parties.  We do so with gastronomic style and beatiful presentation.</p>
+                  <small>Every order must be placed with at least three (<strong>3</strong>) days notice.</small>
+                </div>
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="pastel">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("baking.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Pastelería</h1>
+                  <p class="lead">Enjoy our delicious pastery on your big day.  We are at the forefront of new recipes and creations in the pastry world.  Our top-class chefs work on original ideas so that your product is always one of a kind.</p>
+                  <small>Every order must be placed with at least three (<strong>3</strong>) days notice.</small>
+                </div>
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="catering">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("domicilio.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Catering</h1>
+                  <p class="lead">We have the support of terrific providers in our markt, guaranteeing the highest quality ingredients.  Allow us to take care of building the perfect menu for your event so that you can focus on what's important: enjoying your event.
+                  </p>
+                  <small>Every order must be placed with at least three (<strong>3</strong>) days notice.</small>
+                </div>
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="domicilio">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("smallplates.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Delivery</h1>
+                  <p class="lead">Gourmet Fabregat's home delivery offers the same high-quality services delivered directly to your doorstep.  If you work at home or are hosting an event, our home catering and delivery service is a must.</p>
+                </div>
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="empresas">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("corpcater.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Businesses</h1>
+                  <p class="lead">This service makes it possible so that you can form business bonds, arrive at agreements and satifsy your clients needs directly from your office. We offer high-quality services that include coffee break, snacks, and lunch delivered direct to your work-place.</p>                  
+                </div>
+
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="person">
+            <div class="row">
+
+              <div class="offers">
+
+                <div class="col-md-6">
+                  <%= image_tag("bar.png", class: "img-responsive") %>
+                </div>
+
+                <div class="col-md-6">
+                  <h1>Personalized</h1>
+                  <p class="lead">We think about each of our clients specific needs and cater to those who choose a healthy lifestyle.  Healthy ingrients, those which provide the essencial nutrients and energy that each person needs, are at the heart of what we do.</p>
+                </div>
+              </div><!-- .offers -->
+
+            </div><!-- .row -->
+          </div>
+        </div>
+
+      </div><!-- .row -->
+
+    </div><!-- .col-md-10 -->
+
+  </div><!-- .container -->
+
+</div>
+
+<div id="invite">
+
+	<p>
+		Here we are! A group of <span class="highlight">professionals who love and enjoy</span> what we do.
+	</p>
+
+</div>
+
+<div id="contact">
+
+	<div class="container">
+
+		<h1>Get in touch!</h1>
+		<h3>We would love to hear from you.</h3>
+
+		<hr>
+
+		<%= form_for Lead.new do |f| %>
+			<div class="row">
+
+				<div class="form-group col-xs-6">
+					<label>Name</label>
+					<%= f.text_field :first_name, class: "form-control", placeholder: "Your name...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-6">
+					<label>Last Name</label>
+					<%= f.text_field :last_name, class: "form-control", placeholder: "Your last name...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-6">
+					<label>Email</label>
+					<%= f.email_field :email, class: "form-control", placeholder: "Your email...", required: true %>
+				</div>
+
+				<div class="form-group col-xs-6">
+					<label>Telephone</label>
+					<%= f.text_field :telephone, class: "form-control", placeholder: "Your phone..." %>
+				</div>
+
+				<div class="form-group col-xs-12">
+					<label>Message</label>
+					<%= f.text_area :message, rows: "4", class: "form-control", placeholder: "Leave us a message here...", required: true %>
+				</div>
+
+				<%= button_tag class: "btn btn-lg nav-button" do %>
+					Submit
+				<% end %>
+
+			</div><!-- .row -->
+
+		<% end %>
+
+	</div><!-- .container -->
+
+</div>
+
+<div id="footer">
+	<div class="row">
+
+		<div class="col-md-6 imageback hidden-sm hidden-xs">
+			<%= image_tag('wine.jpg')%>
+		</div>
+
+		<div class="col-md-6 blueback">
+			<p>We want to make your events the very best by offering a distinct variety of world-class flavors and tastes, making your event one that will be truly unforgettable, unique and enjoyable.
+			</p>
+			
+			<h4>Follow us here:</h4>
+
+			<ul class="list-inline banner-social-buttons">
+        <li>
+            <a href="https://twitter.com/" class="btn-outline" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="https://facebook.com/" class="btn-outline" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+        </li>
+
+        <li>
+        		<%= mail_to "contacto@gourmetfabregat.cl", class: "btn-outline" do %>
+            	<i class="fa fa-fw fa-envelope"></i>
+            <% end %>
+        </li>
+      </ul>
+
+     	<hr> 
+
+     	<div class="row">
+
+	     	<div class="col-sm-6 contactinfo">
+	     		<p>(569)7821-0000</p>
+	     		<p>contacto@gourmetfabregat.cl</p>
+	     	</div>
+
+	     	<div class="col-sm-6 contactinfo">
+	     		<p class="right">&copy; 2015 Gourmet Fabregat</p>
+	     	</div>
+	    </div><!-- .row -->
+
+	    <div class="dev">
+	    	<small>made with <i class="fa fa-heart-o"></i> by <%= link_to "n.allen", "http://www.nallenanderson.com", target:"_blank", class: "nate" %></small>
+	    </div>
+
+    </div><!-- .blueback -->
+
+  </div><!-- .row	 -->
+
+</div>
+
+<%= render 'pages/menu' %>
+
+<script>
+
+	$(document).ready(function);
+
+</script>

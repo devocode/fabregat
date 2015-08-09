@@ -20,7 +20,9 @@
         </li>
 
         <li>
-            <a href="mailto:youremail@email.com" class="btn-outline" target="_top"><i class="fa fa-fw fa-envelope"></i></a>
+        		<%= mail_to "contacto@gourmetfabregat.cl", class: "btn-outline" do %>
+            	<i class="fa fa-fw fa-envelope"></i>
+            <% end %>
         </li>
       </ul>
 
