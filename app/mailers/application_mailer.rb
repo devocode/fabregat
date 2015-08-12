@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-	default from: "contacto@gourmetfabregat.cl"
-	layout 'mailer'
+  default from: "gerencia@gourmetfabregat.cl"
+  layout 'mailer'
 end
