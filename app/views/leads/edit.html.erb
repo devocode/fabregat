@@ -57,7 +57,7 @@
 
 		  </div><!-- .row -->
 
-		  <p class="lead">Created on <%= @lead.created_at %></p>
+		  <p>Enviado: <%= @lead.created_at.strftime("%d/%m/%Y") %></p>
 
 		<% end %><!-- END NEW LEAD FORM -->
 

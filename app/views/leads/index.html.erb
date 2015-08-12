@@ -39,5 +39,8 @@
 				</tbody>
 			</table>
 		</div><!-- .table-responsive -->
+		<div class="text-center">
+		  <%= will_paginate @lead, renderer: BootstrapPagination::Rails %>
+		</div>
 	</div><!-- .container -->
 </section>

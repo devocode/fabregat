@@ -2,7 +2,7 @@ class LeadsController < ApplicationController
 	before_action :set_lead, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@lead = Lead.all
+		@lead = Lead.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
 	end
 
 	def create

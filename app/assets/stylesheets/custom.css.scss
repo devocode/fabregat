@@ -787,6 +787,23 @@ LEADS
 	margin: 10px 0;
 }
 
+#leads p {
+	margin: 20px 0;
+	font-weight: 600;
+}
+
+// Pagination
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+	z-index: 2;
+  color: $white;
+  background-color: $green;
+  border-color: $green;
+  cursor: default;
+}
+
+.pagination > li > a, .pagination > li > span {
+	color: $green;
+}
 /************************************************** 
 RESPONSIVE SECTION
 **************************************************/
