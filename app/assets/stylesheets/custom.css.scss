@@ -124,12 +124,20 @@ HOMEPAGE
 	h1 {
 		margin: 15px 0 0 0;
 		font-weight: 600;
-		font-size: 103px;
+		font-size: 80px;
 	}
 	h2 {
 		margin: 5px 0 20px 0;
 		font-size: 30px;
 		letter-spacing: 4px;
+	}
+	h3 {
+		margin: 0;
+		font-size: 45px;
+		&.special {
+			margin-top: -15px;
+			margin-bottom: 15px;
+		}
 	}
 	p.lead {
 		margin: 1.4em 5em;
