@@ -1,8 +1,14 @@
 <div id="heading" class="text-center">
 	<div class="black"></div>
 	<div class="languages">
-		<%= link_to "ES", root_path %> | </span><%= link_to "EN", en_path %>
-	</div>
+    <%= link_to root_path do %>
+     <%= image_tag('spain.png', class: 'img-responsive') %>
+    <% end %>
+    | 
+    <%=link_to en_path do %>
+      <%= image_tag('english.png', class: 'img-responsive') %>
+    <% end %>
+  </div>
 
 	<div class="heading">
 		

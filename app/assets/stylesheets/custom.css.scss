@@ -52,7 +52,14 @@ a, a:hover, a:visited, a:active {
   z-index: 2000;
   width: 100%;
   border-radius: 0;
-  padding: 15px 0;
+  padding: 45px 0;
+  font-size: 30px;
+  background: rgba($green, 0.8);
+  color: $white;
+  .close {
+  	font-size: 40px;
+  	color: $white;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,14 +70,6 @@ h1 {
 	font-size: 3.5em;
 	margin: 0;
 }
-
-/* section {
-	padding: 4em 0;
-	position: relative;
-	&#leads {
-		padding: 1.5em 0;
-	}
-} */
 
 .white {
 	background-color: rgba($white, 0.3);
@@ -95,6 +94,10 @@ h1 {
 		&:hover {
 			color: darken($white, 5%);
 		}
+	}
+	img {
+		max-height: 40px;
+		display: inline;
 	}
 }
 
@@ -135,7 +138,7 @@ HOMEPAGE
 		margin: 0;
 		font-size: 45px;
 		&.special {
-			margin-top: -15px;
+			margin-top: -10px;
 			margin-bottom: 15px;
 		}
 	}
@@ -811,6 +814,9 @@ RESPONSIVE SECTION
 			font-size: 17px;
 			letter-spacing: 2px;
 		}
+		h3 {
+			font-size: 35px;
+		}
 	}
 	
 	#footer {
@@ -831,6 +837,9 @@ RESPONSIVE SECTION
 	#heading {
 		h1 {
 			font-size: 42px;
+		}
+		h3 {
+			font-size: 28px;
 		}
 	}
 	#call p {

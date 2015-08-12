@@ -10,7 +10,7 @@ class LeadsController < ApplicationController
 		if @lead.save
 			redirect_to root_path, notice: "Gracias por el mensaje. ¡Estaremos en contacto!"
 			
-			#LeadMailer.new_lead(@lead).deliver_later   ADD LEAD MAILER LATER!!!!
+			LeadMailer.new_lead(@lead).deliver_later
 			
 		else
 			redirect_to root_path, alert: "No pudimos guardar tus respuestas.  Por favor intenta de nuevo."
