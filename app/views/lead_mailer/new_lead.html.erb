@@ -2,16 +2,34 @@
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,300' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @lead.first_name %></h1>
-    <p>
-      You have successfully signed up to example.com,
-      your username is: <%= @lead.last_name %>.<br>
-    </p>
-    <p>
-      To login to the site, just follow this link: <%= @url %>.
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+    <h2 style='font-family: "Raleway", sans-serif; margin-bottom: 20px; font-size: 24px; font-weight: 500; line-height: 1.4;'>Hola Equipo!  Recibimos un nuevo contacto!</h2>
+    
+    <h3 style='font-family: "Raleway", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Nombre:</h3>
+      
+    <p style='font-family: "Raleway", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px; margin-top: 0;'><%= @lead.first_name %> <%= @lead.last_name %></p>
+    
+    <h3 style='font-family: "Raleway", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Email:</h3>
+      
+    <p style='font-family: "Raleway", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px; margin-top: 0;'><%= @lead.email %></p>
+
+    <h3 style='font-family: "Raleway", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Teléfono:</h3>
+      
+    <p style='font-family: "Raleway", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px; margin-top: 0;'><%= @lead.telephone %></p>
+
+    <h3 style='font-family: "Raleway", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Mensaje:</h3>
+
+    <p style='font-family: "Raleway", sans-serif; font-size: 22px; font-weight: 300; padding-bottom: 15px;  margin-top: 0;'><%= @lead.message %></p>
+
+    <%= link_to 'Ver Datos', @lead, style: 'padding: 10px 16px; font-size: 20px; line-height: 1.3333333; border-radius: 6px; color: #fcfcfc; background: #5bc0de; border: 1px solid #46b8da; text-decoration: none; margin-bottom: 20px;' %>
+
+    <p style='font-family: "Raleway", sans-serif; font-size: 18px; font-weight: 300; padding-top: 15px;'>Siempre un placer,</p>
+
+    <h2 style='font-family: "Raleway", sans-serif; font-weight: 500; font-size: 24px; font-style: oblique;'>Gourmet Fabregat y Co.</h2>
   </body>
 </html>
+
+
