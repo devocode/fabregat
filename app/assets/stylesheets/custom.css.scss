@@ -85,19 +85,16 @@ h1 {
 	position: absolute;
 	top: 5px;
 	right: 15px;
-	font-size: 18px;
+	font-size: 26px;
 	font-weight: 600;
 	z-index: 4;
+	font-family: $font2;
 	color: $white;
 	a {
 		color: $white;
 		&:hover {
 			color: darken($white, 5%);
 		}
-	}
-	img {
-		max-height: 40px;
-		display: inline;
 	}
 }
 
