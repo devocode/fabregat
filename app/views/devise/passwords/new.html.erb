@@ -1,0 +1,24 @@
+<div id="sign" class="col-md-6 col-md-offset-3">
+	  
+		<h2 class="text-center">¿Olvidaste algo?</h2>
+		
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+		  <%= devise_error_messages! %>
+			
+			<p class="lead">Pon tu email aquí y te enviamos un enlace para reestablecer tu contraseña.</p>
+		  <div class="form-group">
+		    <%= f.label :email %>
+		    <%= f.email_field :email, autofocus: true, class: "form-control" %>
+		  </div>
+
+		  <div class="form-group">
+		    <%= f.submit "Enviar contraseña", class: "btn btn-info btn-lg btn-block" %>
+		  </div>
+
+		  <div class="form-group">
+		    <%= link_to "Volver", user_session_path, class: "btn btn-default btn-lg btn-block" %>
+		  </div>
+
+		<% end %>
+
+	</div>

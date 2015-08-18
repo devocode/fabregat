@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'mandrill-api', '~> 1.0.53'
+gem 'devise', '~> 3.4.1'
 gem 'will_paginate-bootstrap'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
